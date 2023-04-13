@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet"  href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/editormd/css/editormd.min.css">
+    <script src="/assets/js/bootstrap.min.js"></script>
+    <title>首页</title>
+</head>
+
+
+<body>
+
+<div class="container ">
+
+{{template "header"}}
+
+    <div id="test-editor">
+    <textarea style="display:none;">### 此处开启你的文章之旅............###</textarea>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/assets/editormd/editormd.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var editor = editormd("test-editor", {
+                 width  : "100%",
+                 height : 800,
+                path   : "assets/editormd/lib/"
+            });
+        });
+    </script>
+
+
+
+
+
+</div>
+
+
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet"  href="/assets/css/bootstrap.min.css">
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <title>登入</title>
+</head>
+
+
+<body>
+
+<div class="container ">
+
+  {{template "header"}}
+
+  <div class="row justify-content-center" >
+    <div class="col-md-4">
+      <form method="post" action="/login">
+        <p class="text-white" style="background-color: #58151c;font-size: 40px">{{.}}</p>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">用户名</label>
+          <input type="text" name="lusername" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text">我们不会泄露任何用户的私人信息</div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">密码</label>
+          <input type="password" name="lpassword" class="form-control" id="exampleInputPassword1">
+        </div>
+
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">自动保存密码</label>
+        </div>
+        <button type="submit" class="btn btn-primary">登入</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>

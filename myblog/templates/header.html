@@ -1,0 +1,28 @@
+{{define "header"}}
+<header class="p-3 text-bg-dark">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+      <a class="navbar-brand text-primary" style="font-size: 40px" href="#" >古月网</a>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="/face" class="nav-link px-2 text-white">首页</a></li>
+        <li><a href="/post_index" class="nav-link px-2 text-white">动态</a></li>
+        <li><a href="/post" class="nav-link px-2 text-white">发表动态</a></li>
+        <li><a href="/message" class="nav-link px-2 text-white">留言版</a></li>
+        <li><a href="#" class="nav-link px-2 text-white">关于作者 </a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+        <input href="/face" type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+      </form>
+
+      <div class="text-end">
+        <a type="button" href="/login" class="btn btn-outline-light me-2">登入</a>
+        <a type="button" href="/register" class="btn btn-warning">注册</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+{{end}}
